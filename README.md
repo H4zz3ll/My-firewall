@@ -23,10 +23,10 @@ Designed to limit communication between network segments and reduce the attack s
 
 Examples include:
 
-User → Server restrictions
-IoT → LAN isolation
-Guest → Internal network isolation
-Server → Server access control
+User -> Server restrictions
+IoT -> LAN isolation
+Guest -> Internal network isolation
+Server -> Server access control
 Management network isolation
 VLAN-based security policies
 
@@ -65,21 +65,21 @@ For example:
 
 Normal behavior:
 
-Workstation → DNS
-Workstation → Web
-Workstation → Printer
+Workstation -> DNS
+Workstation -> Web
+Workstation -> Printer
 
               ↓
 
 Suspicious behavior:
 
 Workstation
-     │
-     ├──► Server A : 445
-     ├──► Server B : 445
-     ├──► Server C : 445
-     ├──► Server D : 445
-     └──► Server E : 445
+     |
+     ├──> Server A : 445
+     ├──> Server B : 445
+     ├──> Server C : 445
+     ├──> Server D : 445
+     └──> Server E : 445
 
 A sudden increase in SMB connections across multiple internal systems could become a behavioral signal requiring investigation.
 
